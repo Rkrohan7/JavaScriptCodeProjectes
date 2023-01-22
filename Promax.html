@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    .i1 {
+        margin-top: 5px;
+    }
+
+    .div4 {
+        border: 1px solid black;
+        background-color: #000;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        margin-top: -80px;
+        margin-left: -12px;
+
+    }
+
+    a {
+        padding: 20px;
+        color: #000;
+        color: #ffffff;
+
+    }
+
+    .nav1 {
+
+        margin-left: 450px;
+        margin-top: 13px;
+        color: #ffffff;
+
+    }
+
+    .div5 {
+
+        width: 150px;
+        margin-top: -16px;
+        margin-left: 70px;
+        font-size: x-large;
+
+    }
+
+    .btn {
+
+        display: block;
+        padding: 5px;
+        width: 100px;
+        font-size: 14px;
+        text-align: center;
+        margin-left: 940px;
+        margin-top: -60px;
+        color: green;
+        border: 1px solid green;
+    }
+
+    .btn:hover {
+        color: #fff;
+        background-color: green;
+    }
+
+    .img2 {
+        margin-top: -99px;
+        filter: brightness(0.4);
+
+        position: absolute;
+        z-index: -1;
+    }
+
+    .a1:hover {
+        color: green;
+    }
+
+    .he1 {
+        margin-left: 320px;
+        color: #ffffff;
+    }
+
+    .he2 {
+        margin-left: 200px;
+        color: #ffffff;
+    }
+
+    .input1 {
+       
+        width: 250px;
+        height: 40px;
+        margin-top: 90px;
+        margin-left: 300px;
+    }
+
+    .btnsub {
+        width: 100px;
+        height: 46px;
+        margin-top: 90px;
+        margin-left: -6px;
+        background-color: #66CC66;
+        border: 1px solid #66CC66;
+        color: #fff;
+    }
+
+    .btnsub:hover {
+        background-color: green;
+        border: 1px solid green;
+    }
+
+    .img4 {
+        margin-top: 250px;
+        margin-left: 200px;
+    }
+
+    .newdiv {
+        margin-left: 600px;
+        margin-top: -230px;
+    }
+
+    .div6 {
+        margin-top: 90px;
+    }
+
+    .readme {
+        width: 100px;
+        height: 43px;
+        margin-top: 15px;
+        margin-left: -6px;
+        background-color: #84c284;
+        border: 1px solid #84c284;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .readme:hover {
+        color: #fff;
+        background-color: green;
+
+    }
+
+    p {
+        color: gray;
+    }
+
+    .he3 {
+        color: gray;
+        font-size: xx-large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .img5 {
+        margin-top: 200px;
+        margin-left: 700px;
+    }
+
+    .newdiv1 {
+        margin-left: 160px;
+        margin-top: -230px;
+    }
+
+    .readbtn1 {
+        width: 100px;
+        height: 43px;
+        margin-top: 15px;
+        margin-left: -6px;
+        background-color: #84c284;
+        border: 1px solid #84c284;
+        color: #fff;
+    }
+
+    .readbtn1:hover {
+        color: #fff;
+        background-color: green;
+        cursor: pointer;
+    }
+
+    .div8 {
+
+        height: 600px;
+        width: 100%;
+        margin-top: 60px;
+        background-color: rgb(243, 237, 237);
+        text-align: center;
+    }
+
+    .a2 {
+        color: gray;
+        font-size: xx-large;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -500px;
+        margin-left: 400px;
+
+    }
+
+    .a3 {
+        margin-left: 330px;
+        margin-top: -20px;
+    }
+
+    .boxmain {
+        display: flex;
+
+    }
+
+    .same1 {
+        padding: 200px;
+        margin-top: -100px;
+    }
+
+    .divp {
+        margin-left: 290px;
+        margin-top: -300px;
+    }
+
+    .divp1 {
+        margin-left: 760px;
+        margin-top: -110px;
+    }
+
+    .boxp {
+        font-size: x-large;
+
+
+    }
+
+    .boxp1 {
+        font-size: x-large;
+    }
+
+    .boxmain1 {
+        display: flex;
+    }
+
+    .divimg {
+        padding: 200px;
+        margin-top: -120px;
+    }
+
+    .divp2 {
+        margin-left: 290px;
+        margin-top: -300px;
+    }
+
+    .boxp2 {
+        font-size: x-large;
+
+    }
+
+    .divp3 {
+        margin-left: 760px;
+        margin-top: -110px;
+    }
+
+    .boxp3 {
+        font-size: x-large;
+    }
+
+    .newp {
+        font-size: 40px;
+        margin-top: 130px;
+        margin-left: 320px;
+    }
+
+    .newp1 {
+        margin-top: -40px;
+        margin-left: 200px;
+    }
+
+    .newp2 {
+        margin-top: -38px;
+
+        margin-left: 500px;
+    }
+
+
+
+    .child {
+        border: 1px solid #66CC66;
+        height: 100px;
+        width: 300px;
+        margin-left: 59px;
+        margin-top: 80px;
+    }
+
+    .child1 {
+        border: 1px solid #66CC66;
+        height: 300px;
+        width: 300px;
+        margin-left: 59px;
+
+
+    }
+
+    .child2 {
+        border: 1px solid #66CC66;
+        height: 100px;
+        width: 300px;
+        margin-left: 400px;
+        margin-top: -402px;
+        background-color: #84c284;
+
+
+    }
+
+    .child3 {
+        border: 1px solid #66CC66;
+        height: 300px;
+        width: 300px;
+        margin-left: 400px;
+    }
+
+    .child6 {
+        border: 1px solid #66CC66;
+        height: 100px;
+        width: 300px;
+        margin-left: 740px;
+        margin-top: -402px;
+    }
+
+    .child7 {
+        border: 1px solid #66CC66;
+        height: 300px;
+        width: 300px;
+        margin-left: 740px;
+    }
+
+    @media screen and (max-width: 480px) {
+        .imgdiv {
+            justify-content: center;
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+
+    }
+
+    .btndiv1 {
+
+        margin-left: 500px;
+    }
+
+    .designedbutton {
+        border: 1px solid #84c284;
+        color: #ffffff;
+        width: 100px;
+        height: 30px;
+        border-radius: 15px;
+        font-size: 12px;
+        text-align: start;
+        cursor: pointer;
+        background-color: #84c284;
+    }
+
+    .designedbutton1 {
+        border: 1px solid #84c284;
+        color: #ffffff;
+        width: 80px;
+        height: 30px;
+        border-radius: 15px;
+        margin-left: -30px;
+        cursor: pointer;
+        font-size: 12px;
+        background-color: #84c284;
+
+    }
+
+    .designedbutton1:hover {
+        color: #fff;
+        background-color: #000;
+        cursor: pointer;
+    }
+
+    .designedbutton:hover {
+        color: #fff;
+        background-color: #000;
+        cursor: pointer;
+    }
+
+    .cp1 {
+        color: #000;
+        text-align: center;
+
+    }
+
+    .cp2 {
+        color: #000;
+        text-align: center;
+        font-size: x-large;
+    }
+
+
+    .pc1 {
+        margin-left: 110px;
+        margin-top: 25px;
+    }
+
+    .purchase {
+        border: 1px solid #84c284;
+        height: 60px;
+        width: 301px;
+        cursor: pointer;
+        margin-left: 60px;
+        margin-top: -5px;
+        text-align: center;
+        background-color: #84c284;
+
+
+    }
+
+    .purchase2 {
+        border: 1px solid #84c284;
+        height: 60px;
+        width: 302px;
+        cursor: pointer;
+        margin-left: 35px;
+        margin-top: -60px;
+        text-align: center;
+        background-color: #84c284;
+
+
+    }
+
+    .purchase3 {
+        border: 1px solid #84c284;
+        height: 60px;
+        width: 302px;
+        cursor: pointer;
+        margin-left: 35px;
+        margin-top: -100px;
+        text-align: center;
+        background-color: #84c284;
+
+
+    }
+
+    .purchase1 {
+        color: #ffffff;
+    }
+
+    .cardsconainer {
+        display: flex;
+        margin-left: 55px;
+    }
+
+    .card_chart {
+        border: 0.5px solid #ffffff;
+        background-color: #ffffff;
+        height: 250px;
+        width: 200px;
+        margin-top: 60px;
+        margin-left: 35px;
+    }
+
+    .cardsconainer1 {
+        display: flex;
+        margin-left: 55px;
+    }
+
+    .card_chart1 {
+        border: 0.5px solid #ffffff;
+        background-color: #ffffff;
+        height: 250px;
+        width: 200px;
+        margin-top: 30px;
+        margin-left: 35px;
+        box-shadow: #000;
+    }
+
+    .card_chart1:hover {
+        border: 3px solid #84c284;
+        color: #fff;
+        background-color: #84c284;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .card_chart:hover {
+        border: 3px solid #84c284;
+        color: #fff;
+        background-color: #84c284;
+        border-radius: 30px;
+        cursor: pointer;
+
+    }
+
+    .main_cards_cointainer {
+        background-color: rgb(228, 225, 225);
+        height: 720px;
+        margin-top: 80px;
+    }
+
+    .paradiv {
+
+        margin-left: 300px;
+        margin-top: 100px;
+        height: 80px;
+        width: 500px;
+        text-align: center;
+    }
+
+    .cardpara {
+        font-size: xx-large;
+
+    }
+
+    .get_in_tuch {
+
+        height: 650px;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .touch_para {
+        font-size: xx-large;
+        margin-top: 100px;
+        margin-left: 450px;
+    }
+
+    .touch_para1 {
+
+        margin-top: -2px;
+        margin-left: 400px;
+    }
+
+    .touch_div {
+        display: flex;
+    }
+
+    .touch_child_div {
+
+        height: 350px;
+        width: 500px;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+
+    .name,
+    .email {
+        margin-top: 10px;
+        margin-left: 180px;
+        width: 300px;
+        height: 30px;
+        border: 1px solid rgb(225, 222, 222);
+    }
+
+    .msg {
+        border: 1px solid rgb(225, 222, 222);
+        margin-left: 180px;
+        width: 300px;
+    }
+
+    .form_btn {
+        width: 105px;
+        height: 40px;
+
+        margin-left: 180px;
+        background-color: #84c284;
+        border: 1px solid #84c284;
+        color: #fff;
+    }
+
+    .form_btn:hover {
+        color: #fff;
+        background-color: green;
+        cursor: pointer;
+    }
+
+    .imgdiv {
+
+        margin-top: 80px;
+    }
+
+    .chart_img:hover {
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .chart_line {
+        width: 80px;
+        margin-top: 30px;
+        background-color: #000;
+    }
+
+    .chart_img {
+        margin-left: 75px;
+        margin-top: 20px;
+    }
+
+    .chart_img1 {
+        margin-top: 10px;
+        margin-left: 10px;
+
+        cursor: pointer;
+
+    }
+    
+
+    .chart_heading {
+        margin-left: 20px;
+    }
+
+    .chart_heading1 {
+        margin-left: 30px;
+    }
+
+    .chart_heading2 {
+        margin-left: 20px;
+    }
+
+    .chart_heading3 {
+        margin-left: 50px;
+    }
+
+    .chart_heading4 {
+        margin-left: 20px;
+    }
+
+    .chart_heading5 {
+        margin-left: 35px;
+    }
+
+    .chart_heading6 {
+        margin-left: 20px;
+    }
+
+    .chart_heading7 {
+        margin-left: 30px;
+    }
+
+    .Chart_para {
+        margin-left: 15px;
+    }
+
+    .main_img_div {
+        display: flex;
+    }
+
+    .child_img_div1 {
+        border: 1px solid black;
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+        border-radius: 60px;
+
+    }
+
+    .child_img_div1:hover {
+        border: 2px solid rgb(148, 25, 25);
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+        border-radius: 60px;
+
+    }
+</style>
+
+<body>
+
+    <div class="div4">
+
+        <nav class="nav1">
+            <a href="#Home" class="a1">Home</a>
+            <a href="./company.html" class="a1">Company</a>
+            <a href="./servises.html" class="a1">Service</a>
+            <a href="./gallary.html" class="a1">Gallary</a>
+            <a href="Blog" class="a1">Blog</a>
+            <a href="Contact" class="a1">Contact</a>
+
+        </nav>
+        <div class="div5">
+            <span style="color:#fff">PRO-</span>
+            <span style="color:#66CC66">MAX</span>
+            <div id="navwrapper">
+                <a href="signup.html"><button class="btn">sign up</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="imgdiv">
+
+
+        <img src="https://cdn.shopify.com/s/files/1/0810/3669/articles/macbook_model_feat_1200x.jpg?v=1456167780" alt=""
+            height="100%" width="100%" class="img2">
+        <h2 class="he1">Bring your Big Data to Life With Soft-Tech</h2>
+        <p class="he2">Blue Lance transforms your company's data into rich visuals for you to collect and organize so
+            you
+            can
+            focus on what matters to <br> you.Stay in the know,
+            spot trends as they happen, and push your business further.
+        </p>
+        <input type="email" placeholder="Enter Your email" class="input1" required>
+        <input type="submit" value="Try It Free " class="btnsub" onclick="btnsubmit()">
+    </div>
+
+    <div class="div6">
+        <img src="https://bootstrapthemes.co/demo/html/soft-tech-html-landing-page-template/assets/images/feature-2.jpg"
+            alt="" height="300px" width="300px" class="img4">
+    </div>
+    <div class="newdiv">
+        <p class="he3">OUR PRODUCT</p>
+        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis <br> mollis, est non commodo luctus,
+            nisi erat porttitor ligula.
+        </p>
+        <p> Quisque volutpat mattis eros.</p>
+        <p> Nullam malesuada erat ut turpis.</p>
+        <p> Suspendisse urna nibh.</p>
+        <input type="button" value="Read More" class="readme">
+    </div>
+
+    <div class="div7">
+        <img src="https://bootstrapthemes.co/demo/html/soft-tech-html-landing-page-template/assets/images/feature-1.jpg"
+            alt="" height="300px" width="300px" class="img5">
+    </div>
+    <div class="newdiv1">
+        <p class="he3">PRODUCT DESCRIPTIONS</p>
+        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis <br> mollis, est non commodo luctus,
+            nisi erat porttitor ligula.
+        </p>
+        <p> Quisque volutpat mattis eros.</p>
+        <p> Nullam malesuada erat ut turpis.</p>
+        <p> Suspendisse urna nibh.</p>
+        <input type="button" value="Read More" class="readbtn1">
+    </div>
+    <div class="div8">
+
+    </div>
+    <p class="a2">SERVICES WE PROVIDE</p>
+    <p class="a3">condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+    <div class="boxmain">
+        <img src="https://bootstrapthemes.co/demo/html/soft-tech-html-landing-page-template/assets/images/flaticon1.png"
+            alt="" height="47px" width="70px
+    " class="same1">
+        <img src="https://bootstrapthemes.co/demo/html/soft-tech-html-landing-page-template/assets/images/flaticon2.png"
+            height="70px" width="72px" class="same1">
+    </div>
+
+    <div class="divp">
+        <p class="boxp">BRANDING</p>
+        <p class="">Lorem ipsum dolor sit amet, consectetuer <br> adipiscing elit, sed diam nonummy nibh</p>
+    </div>
+
+    <div class="divp1">
+        <p class="boxp1">BRANDING</p>
+        <p class="">Lorem ipsum dolor sit amet, consectetuer <br> adipiscing elit, sed diam nonummy nibh</p>
+
+    </div>
+    <div class="boxmain1">
+        <img src="https://bootstrapthemes.co/demo/html/soft-tech-html-landing-page-template/assets/images/flaticon3.png"
+            alt="" height="70px" width="50px
+        " class="divimg">
+        <img src="https://bootstrapthemes.co/demo/html/soft-tech-html-landing-page-template/assets/images/flaticon4.png"
+            alt="" height="70px" width="70px
+    " class="divimg">
+    </div>
+    <div class="divp2">
+        <p class="boxp2">BRANDING</p>
+        <p class="">Lorem ipsum dolor sit amet, consectetuer <br> adipiscing elit, sed diam nonummy nibh</p>
+
+    </div>
+    <div class="divp3">
+        <p class="boxp3">BRANDING</p>
+        <p class="">Lorem ipsum dolor sit amet, consectetuer <br> adipiscing elit, sed diam nonummy nibh</p>
+    </div>
+    <div>
+        <p class="newp">Affordable Services Package</p>
+        <p class="newp1">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non
+            commodo luctus, nisi </p><br>
+        <p class="newp2">erat porttitor ligula.</p>
+    </div>
+
+    <div class="btndiv1">
+        <button class="designedbutton"> business<button class="designedbutton1">Comunity</button></button>
+    </div>
+    <div class="container ">
+        <div class="child">
+            <p class="cp1">Basic</p>
+            <p class="cp2">65000/yr</p>
+        </div>
+        <div class="child1">
+            <p class="pc1">Post</p>
+            <p class="pc1">Instagram</p>
+            <p class="pc1">Facebook</p>
+            <p class="pc1">Youtube</p>
+            <p class="pc1">Twitter</p>
+            <p class="pc1">Google</p>
+        </div>
+
+
+    </div>
+    <div class="container1">
+        <div class="child2">
+            <p class="cp1">Popular</p>
+            <p class="cp2">85000/yr</p>
+        </div>
+        <div class="child3">
+            <p class="pc1">Post</p>
+            <p class="pc1">Instagram</p>
+            <p class="pc1">Facebook</p>
+            <p class="pc1">Youtube</p>
+            <p class="pc1">Twitter</p>
+            <p class="pc1">Google</p>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="child6">
+            <p class="cp1">Premimum</p>
+            <p class="cp2">95000/yr</p>
+        </div>
+        <div class="child7">
+            <p class="pc1">Post</p>
+            <p class="pc1">Instagram</p>
+            <p class="pc1">Facebook</p>
+            <p class="pc1">Youtube</p>
+            <p class="pc1">Twitter</p>
+            <p class="pc1">Google</p>
+
+        </div>
+    </div>
+    <button class="purchase">
+        <p class="purchase1">PURCHASE</p>
+    </button>
+    <button class="purchase2">
+        <p class="purchase1">PURCHASE</p>
+    </button>
+    <button class="purchase3">
+        <p class="purchase1">PURCHASE</p>
+    </button>
+
+    <div class="main_cards_cointainer">
+        <div class="paradiv">
+            <p class="cardpara">Our Business Platforms</p>
+        </div>
+        <div class="cardsconainer">
+            <div class="card_chart">
+                <img src="./images/facebook.png" alt="" height="50px" width="50px" class="chart_img">
+                <hr class="chart_line">
+                <h3 class="chart_heading">Facebook Handling</h3>
+                <p class="Chart_para">Create Facebook page and handle share the Posts </p>
+            </div>
+            <div class="card_chart">
+                <img src="./images/google.png" alt="" height="50px" width="50px" class="chart_img">
+                <hr class="chart_line">
+                <h3 class="chart_heading1">Google Handling</h3>
+                <p class="Chart_para">Create Google page and handle share the Posts </p>
+            </div>
+            <div class="card_chart">
+                <img src="./images/instagram.png" alt="" height="50px" width="50px" class="chart_img">
+                <hr class="chart_line">
+                <h3 class="chart_heading2">Instagram Handling</h3>
+                <p class="Chart_para">Create Instagram page and handle share the Posts </p>
+            </div>
+            <div class="card_chart">
+                <img src="./images/more.png" alt="" height="50px" width="50px" class="chart_img">
+                <hr class="chart_line">
+                <h3 class="chart_heading3">Post Handling</h3>
+                <p class="Chart_para">Create Posts and handle share the Posts </p>
+            </div>
+        </div>
+        <div class="cardsconainer1">
+            <div class="card_chart1">
+                <img src="./images/telegram.png" alt="" height="50px" width="50px" class="chart_img">
+                <hr class="chart_line">
+                <h3 class="chart_heading4">Telegram Handling</h3>
+                <p class="Chart_para">Create Telegram page and handle share the Posts </p>
+            </div>
+            <div class="card_chart1">
+                <img src="./images/twitter.png" alt="" height="50px" width="50px" class="chart_img">
+                <hr class="chart_line">
+                <h3 class="chart_heading5">Twitter Handling</h3>
+                <p class="Chart_para">Create Twitter page and handle share the Posts </p>
+            </div>
+            <div class="card_chart1">
+                <img src="./images/whatsapp.png" alt="" height="50px" width="50px" class="chart_img">
+                <hr class="chart_line">
+                <h3 class="chart_heading6">Whatsapp Handling</h3>
+                <p class="Chart_para">Create Whatsapp groups and handle share the Posts </p>
+            </div>
+            <div class="card_chart1">
+                <img src="./images/youtube.png" alt="" height="50px" width="50px" class="chart_img">
+                <hr class="chart_line">
+                <h3 class="chart_heading7">Youtube Handling</h3>
+                <p class="Chart_para">Create Youtube bloges and handle Create Shorts </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="get_in_tuch">
+        <div>
+            <p class="touch_para">GET IN TOUCH</p>
+            <p class="touch_para1">get in touch with Promax Advertising pvt.limited <br>get your bussiness as Online</p>
+        </div>
+        <div class="touch_div">
+            <div class="touch_child_div">
+                <form action="">
+                    <input type="text" class="name" placeholder="First Name" required><br><br>
+                    <input type="email" class="email" placeholder="Email" required><br><br>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" class="msg"></textarea><br>
+                    <br>
+                    <input type="button" value="Submit" class="form_btn">
+                </form>
+            </div>
+            <div class="touch_child_div">
+
+
+
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatem sint dolorum nulla,
+                    odit voluptatum? Tenetur aliquam odit qui quis,
+                    maiores consequuntur alias natus eum a sapiente. Quos, consequatur quaerat?</p>
+
+                <h5>Sangola, Maharashtra 413307 <br>
+                    India <br><br><br><br>
+                    Rohan: (+91)7558598029 <br><br>
+                    Vishvajit: (+91)9309375926</h5>
+                <div class="main_img_div">
+                    <div class="child_img_div1">
+                        <img src="./images/facebook.png" alt="" height="20px" width="20px" class="chart_img1">
+                    </div>
+                    <div class="child_img_div1">
+                        <img src="./images/twitter.png" alt="" height="20px" width="20px" class="chart_img1">
+                    </div>
+                    <div class="child_img_div1">
+
+                        <img src="./images/google.png" alt="" height="20px" width="20px" class="chart_img1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function btnsubmit() {
+            if (input1 == " ") {
+                alert("submit the email.");
+            }
+            else {
+                alert("wellcome to our website.");
+            }
+        }
+        btnsubmit();
+    </script>
+</body>
+
+</html>
