@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="input1">
+    <button onclick="Push1()">Push</button>
+
+    <button onclick="pop1()">Pop</button><br><br><br>
+
+    <script>
+        var array = [21, "Rohan", "Pune"];
+        document.write("This is main array::---" + array);
+
+//push function.........................................................................
+        function Push1() {
+
+            var inputtext = document.getElementById("input1").value;
+
+           // alert(inputtext);
+
+
+            if (inputtext == '') {
+                alert("enter element!!!!!!!!!!!!!!!!");
+            } 
+            // else if (!(/^\S$/.test(inputtext))) {
+            //     alert("space not allowed");
+            //     return false;
+            // } 
+            else {
+               // alert("from else block")
+                array.push(inputtext);
+            }
+            var pval = "";
+            for (i = 0; i < array.length; i++) {
+                pval = pval + array[i] + "<br>";
+
+            }
+
+            document.getElementById("p1").innerHTML = pval;
+
+            document.getElementById("input1").value = "";
+
+
+        }
+        document.write("<br>");
+
+
+        function lengthfun() {
+            for (j = 0; j <= array.length; j++) {
+                document.getElementById("p2").innerHTML = "Length of array is:" + array.length;
+            }
+        }
+
+         function pop1() {
+
+
+            var inputtext = document.getElementById("input1").value;
+           // alert(inputtext)
+            alert(array.indexOf(inputtext));
+            //array.pop(inputtext);
+
+            
+
+            
+            
+            var pval1 = "";
+            var elementFound = false;
+            for (i = 0; i < array.length; i++) {
+                //pval1 = pval1 + array[i] + "<br>";
+                if (array[i] == inputtext) {
+                    alert(array.indexOf(inputtext));
+                    array.splice(i, 1);
+                    elementFound = true;
+                }
+            }
+
+            alert(array);
+            
+            if (!elementFound) {
+            alert(inputtext + " : not present in array");
+            }
+            var pval4="";
+        }
+
+
+        document.write("<br>");
+
+
+
+
+    </script>
+    <p id="p1"></p>
+    <p id="p3"></p>
+    <button onclick="lengthfun()">length</button>
+    <p id="p2"></p>
+</body>
+
+</html>
