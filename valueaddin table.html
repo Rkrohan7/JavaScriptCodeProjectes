@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./table.js"></script>
+    <link rel="stylesheet" href="./table.css">
+</head>
+
+  <style>
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-top: 50px;
+            margin-left: 50px;
+
+
+        }
+
+        input {
+
+            margin: 12px 10px;
+            padding: 8px;
+            border: 2px solid black;
+            border-radius: 8px;
+            width: 300px;
+        }
+
+        .btn {
+            width: 70px;
+            margin-top: 14px;
+            padding: 5px 8px;
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+
+        .section {
+
+            width: 50%;
+            height: 100vh;
+            background-color: pink;
+
+        }
+
+        table, th, td{
+
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="form">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="First name">
+
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Last  name">
+
+
+            <label for="rollno">Roll No:</label>
+            <input type="number" id="rollno" name="rollno" placeholder="Roll no">
+
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class" placeholder="class ">
+
+            <button class="btn" id="button" onclick="submit()">Submit</button>
+        </div>
+
+        <div class="section">
+            <table id="table">
+
+                <thead>
+                    <tr>  
+                    <td>Name</td>
+                    <td>Roll No</td>
+                    <td>Class</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="name1"></td>
+                        <td id="roll"></td>
+                        <td id="class1"></td>
+                    </tr>
+                   
+                </tbody>
+
+
+            </table>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        function submit() {
+
+
+            let name = document.getElementById("fname").value;
+            let name1 = document.getElementById("lname").value;
+            let roll = document.getElementById("rollno").value;
+            let clas = document.getElementById("class").value;
+            let names = name.concat(name1);
+
+            document.getElementById("name1").innerHTML += names;
+            document.getElementById("roll").innerHTML += roll;
+            document.getElementById("class1").innerHTML += clas;
+
+
+
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
