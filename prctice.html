@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h3>inspect your page to see your output</h3>
+
+<body>
+    <script>
+        //veriables................................................................
+        let a = 10;
+        var b = 20;
+        const c = 30;
+        console.log("this is addition of A,B,C");
+        console.log(a + b + c);
+
+
+        //data types.........................................................................
+
+        let String = "Practice of java script....";
+        console.log("This is string data type:" + String);
+        
+
+        let number = 123;
+        console.log("This is number datatype:" + number);
+
+        var object1 = { name: "Rohan", Fathername: "Ravindra", Sirname: "Kadam", phone_no: 7558598029 };
+        console.log(object1);
+
+        let array = [10, 20, 30, 40, 50, 60, 70, 80, 90];//numeric array...........
+        console.log(array);
+        let array1 = ["Rohan", "Ravindra", "Kadam", "Pune"];
+        console.log(array1);//String Array.....................................123e............ 
+
+        //methods of array.....................................................................
+        array.push(100);
+        console.log(array);
+
+        array1.pop();
+        console.log(array1);
+
+        array.shift();
+        console.log(array);
+
+        array1.unshift(21);
+        console.log(array1);
+
+        console.log("length of array:" + array.length);
+        console.log("length of array1:" + array1.length);
+
+        let x = y => y > 30;
+        console.log(array.find(x));
+        console.log(array.findIndex(x));
+
+        let r = s => s > 20;
+        console.log(array.filter(r));
+
+        console.log(array1.reverse());
+        console.log(array1.concat(array));
+        console.log(array1.slice(2));
+
+
+        // array of object.......................................
+        let arr = [
+            { name: "Rk", number: 7558598029 }
+
+        ]
+        console.log(arr);
+
+        //Multiple Array.......................................................
+
+        let arr1 = [
+            [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            ["abc", "srk", "avm", "pmm"],
+            [5, "Stars", 1, "Rk", 2, "AM", 3, "VS", 4, "SG", 5, "MM"]
+
+        ];
+        console.log(arr1);
+
+//Loops...............................For loop(;;)................................
+console.log("Print 0 to 10 number....... using for loop........");
+let s;
+for(let i=0;i<=10;i++){
+
+    console.log(i);
+}
+console.log("Print 10 to 15 number....... using for loop.....and break.....");
+for(let i=10;i<=20;i++){
+
+    console.log(i);
+    if(i===15){
+        break;
+    }
+}
+console.log("Print 0 to 10 number....... using for loop.......add 2 in all array.......");
+for(item of array){
+item+=2;
+
+    console.log(item);
+
+}
+console.log("Print 0 to 10 number....... using for loop.......multiply 5 in all array.......");
+for(item of array){
+item*=5;
+
+    console.log(item);
+
+}
+console.log("Print 0 to 10 number....... using for loop.......substrctig 5 in all array.......");
+for(item of array){
+item-=5;
+
+    console.log(item);
+
+}
+console.log("Print 0 to 10 number....... using for loop.....divide 5 in all array.......");
+for(item of array){
+    item/=5;
+    
+        console.log(item);
+    
+    }
+    console.log(" using for loop.......separete all  character .......");
+
+    let string="javascript";
+for(let j=0;j<string.length;j++){
+    a=string.charAt(j);
+    console.log(a);
+
+}
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

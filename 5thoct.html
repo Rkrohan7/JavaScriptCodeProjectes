@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: linear-gradient(blue,red ,yellow,pink,purple,white,black,green,brown);
+    }
+    .btn1{
+        border: 1px solid blue;
+        background-color: blue;
+        color:#fff;
+        width: 80px;
+        height: 26px;
+        border-radius: 8px;
+    }
+    .head1{
+color:brown;
+    }
+    #he1{
+        margin-left: 160px;
+        margin-top: -55px;
+        color:brown;
+    }
+    #he2{
+        color:rgb(14, 198, 48);
+    }
+    .add{
+        border: 1px solid blue;
+        background-color: blue;
+        color:#fff;
+        width: 100px;
+        height: 26px;
+        border-radius: 8px;
+        margin: 15px;
+    }
+    .sub{
+        border: 1px solid blue;
+        background-color: blue;
+        color:#fff;
+        width: 100px;
+        height: 26px;
+        border-radius: 8px;
+        margin: 15px;
+    }
+    .multy{
+        border: 1px solid blue;
+        background-color: blue;
+        color:#fff;
+        width: 100px;
+        height: 26px;
+        border-radius: 8px;
+        margin: 15px;
+    }
+    .div{
+        border: 1px solid blue;
+        background-color: blue;
+        color:#fff;
+        width: 100px;
+        height: 26px;
+        border-radius: 8px;
+        margin: 15px;
+    }
+    .submit1{
+        border: 1px solid blue;
+        background-color: blue;
+        color:#fff;
+        width: 150px;
+        height: 26px;
+        border-radius: 8px;
+        margin-left: 400px;
+    }
+    
+</style>
+
+<body >
+   <center> <h1 style="color:rgb(78, 222, 222);">***My 5th oct task***</h1></center><br>
+    <button onclick="btnfun()" class="btn1"> click</button><br>
+    <h1 class="head1">number is:</h1>
+    <h1 id="he1" > </h1>
+    <h2 id="he2"></h2>
+    
+    <button onclick="addition()" class="add">Addition</button>
+    <button onclick="substraction()" class="sub">substraction</button>
+    <button onclick="multiplication()" class="multy">multiplication</button>
+    <button onclick="division()" class="div">division</button><br><br><br>
+    <button onclick=" Push1()" class="multy">Push</button>
+    <button onclick="pop1() " class="div">Pop</button>
+
+
+    <script>
+        function btnfun() {
+        window.alert("you are click on button");//button.......
+
+        }
+
+        //global variable............................................................................
+        document.write("<br>"); document.write("<br>"); document.write("<br>");
+
+        var first = 10;
+        let second = 20;
+        function globalVariable() {
+            document.write("first global variable:" + first);
+            document.write("<br>");
+            document.write("Second global variable:" + second);
+        }
+        globalVariable();
+
+
+        //local Variable.................................................................................
+        document.write("<br>"); document.write("<br>"); document.write("<br>");
+
+        function localVariable() {
+            let one = 30;
+            const two = 40;
+            document.write("first local variable:" + one);
+            document.write("<br>");
+            document.write("Second local variable:" + two);
+        }
+        localVariable();
+
+        //create the array.................................................................
+        document.write("<br>"); document.write("<br>"); document.write("<br>");
+
+        var student = [21, "Rohan", "Pune", 7558598029];
+        document.write(student);
+        console.log(student);
+
+        //create a function name as myfunction..............................................
+        document.write("<br>"); document.write("<br>"); document.write("<br>");
+
+        function myfunction() {
+            document.write("This is my Function");
+        }
+        myfunction();
+
+
+        //create a object....................................................................
+        document.write("<br>"); document.write("<br>"); document.write("<br>");
+
+        var object = { rollno: 21, name: "Rohan", phoneno: 7558598029, address: "Pune" }
+        console.log(object);
+
+
+        //heading tag h1 is used to print number and String...............................................
+        document.getElementById("he1").innerHTML = 10 + 20;
+        document.getElementById("he2").innerHTML = "This is a new task";
+
+        //addition , substraction, multiplication, division..............................................
+
+        var x = 10;
+        var y = 20;
+        var w = 5;
+        var z;
+        function addition() {
+            document.write("first number:" + x);
+            document.write("<br>");
+            document.write("Second number:" + y);
+            document.write("<br>");
+            z = x + y;
+            document.write("Addition is:" + z);
+
+        }
+        function substraction() {
+            document.write("first number:" + x);
+            document.write("<br>");
+            document.write("Second number:" + w);
+            document.write("<br>");
+            z = x - w
+            document.write("substraction is:" + z);
+
+        }
+        function multiplication() {
+            document.write("first number:" + x);
+            document.write("<br>");
+            document.write("Second number:" + y);
+            document.write("<br>");
+
+            document.write("multiplication is:" + x * y);
+
+        }
+        function division() {
+            document.write("first number:" + x);
+            document.write("<br>");
+            document.write("Second number:" + y);
+            document.write("<br>");
+            document.write("division is:" + x / w);
+
+        }
+
+        function Push1() {
+            student.push("Maharastra");
+            document.write(student);
+
+        }
+        function pop1() {
+            student.pop(1);
+            document.write(student);
+
+        }
+
+//write on console ......................................................
+console.log("hey class codekul");
+
+//boolean value..................................................................
+document.write("10>20 true or false:");
+document.write(10>20);
+document.write("<br>");
+document.write("50<80 true or false:");
+document.write(50<80);
+
+function submit(){
+    window.alert("submit your all values");
+}
+
+    </script>
+    <br><br>
+    <button onclick=" submit()" class="submit1">submit</button>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+         //create an array....
+    let cars = ["Bmw", "Volvo", "Honda"];
+    console.log(cars);
+
+    //Access an array item...
+    let Bmw = cars[1];
+   console.log(Bmw);
+
+    //Array length...
+    let len = cars.length;
+    console.log(len);
+
+
+    //Loop over an array item....
+    cars.forEach((item, index, array) => { console.log(item, index); });
+    
+        //convert an array into string....
+             
+        //remove the last element from array...
+            let last1=cars.pop();
+            document.getElementById("demo2").innerHTML=last1;
+            let last2=[cars.length-1];
+            console.log(last2);
+    
+        //Add a new element at the end of an array...
+            cars.push("Audi");
+            document.getElementById("demo").innerHTM=cars;
+    
+        //Remove the first element from an array...
+            cars.shift();
+            document.getElementById("demo").innerHTML=cars;
+    
+        //Add an element at the beginning of an array...
+            cars.unshift("hyundai");
+            document.getElementById("demo").innerHTML=cars;
+    
+        //create a new array by merging existing array... 
+            let bikes = ["yamaha,suzuki,royal,shine"];
+            let vechicles=cars.concat(bikes);
+            document.getElementById("demo"),innerHTML=vechicles;
+    
+        //sort an array in ascending order...
+            vehicles.short();
+            document.getElementById("demo").innerHTML=vehicles;
+    
+        //reverse the elements of an array...
+            vechile.reverse();
+            document.getElementById("demo").innerHTML=vechiles;
+    
+        //map()method create a new array and performs a fuction on each array element...
+            let num1 =[2, 3, 4, 5, 6, 7];
+            let num2 =num1.map(multiply);
+            function multiply(value){
+                return value *2;
+            }  
+            document.getElementById("demo").innerHTM=num2;
+    
+        //filter() method takes each element in an array and it applies a conditional statements against it...
+            let num3 = num1.filter(comp);
+            function comp(value){
+                return value>4;
+            }   
+            documnet.getElementById("demo").innerHTML=num3;
+        //reduce() method an array of values down to just one value using a function...
+            let num4=num1.reduce(sum)
+            function sum(total,value){
+                return total+value;
+            }
+            document.getElementById("demo").innerHTML=num4; 
+        </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //variables....................................................................
+        var a = 5
+        let b = 10;
+        const c = 20;
+        console.log("addition of a,b,c ");
+        console.log(a + b + c);
+
+        //Data Type....................................................................
+
+        let String = "Codekul........."
+        console.log("String is:" + String);
+
+        const number = 20;
+        console.log("number is:" + 20);
+
+        var array = [10, 20, 30, 40, 50];
+        console.log(array);
+
+        var array1 = ["pune", "mumbai", "delhi"];
+        console.log(array1);
+
+        let obj = {
+            name: "Rohan", Rollno: 21, add: "pune"
+        };
+        console.log(obj);
+
+        //Array method..........................................................
+        array1.push("M.P");//push a element in array1......
+        console.log(array1);
+
+        array.pop();//pop element in array.....................
+        console.log(array);
+
+        array1.shift(); // Shift the element in array..................
+        console.log(array1);
+
+        array.unshift(5); //unshift the element..................
+        console.log(array);
+
+        array.slice();
+        console.log(array);
+
+        var a = array.concat(array1);
+        console.log(a);
+        console.log("length:" + array.length);
+        console.log("length:" + array1.length);
+        console.log("reverse:" + array1.reverse());
+        console.log("reverse:" + array.reverse());
+
+        let x = y => y > 5;
+        console.log(array.findIndex(x));
+        console.log(array.find(x));
+        console.log(array.filter(x));
+
+
+        //Loops...................................................
+
+        let s;
+        for (i = 0; i <= 10; i++) {
+            console.log(i);
+        }
+        console.log("break statement.........................................");
+        for (j = 10; j <= 20; j++) {
+            if (j === 15) {
+                break;
+            }
+            console.log(j)
+
+        }
+        console.log("continue statment.............................");
+        for (k = 2; k <= 10; k++) {
+            if (j === 5) {
+                continue;
+            }
+            console.log(k)
+        }
+
+        //do While loop...........................
+        let username;
+        let password;
+
+        do {
+            username = prompt("enter your username:");
+            password = prompt("enter your password:");
+
+
+
+        } while (username!='codekul' && password!='Rohan');
+
+
+
+    </script>
+</body>
+
+</html>

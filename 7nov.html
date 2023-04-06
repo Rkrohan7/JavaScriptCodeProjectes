@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        name: <input type="text" id="name"><br>
+        amt<input type="text" id="amt"><br>
+        city <input type="text" id="city"><br>
+        <input type="button" value=" submit" onclick="xyz(abc)">
+    </form>
+    <script>
+        function abc(name, amt, city) {
+            document.write("name:" + name + "<br>" + "amount:" + amt + "<br>" + "add:" + city);
+        }
+        function xyz(callback) {
+            var name = document.getElementById("name").value;
+            var amt = document.getElementById("amt").value;
+            var city = document.getElementById("city").value;
+            callback(name, amt, city);
+        }
+    </script>
+</body>
+
+</html>

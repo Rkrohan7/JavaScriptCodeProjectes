@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="timedely()"> Wait</button><br><br>
+    <script>
+        setTimeout(() => {
+            console.log("time out...");
+
+        }, 2000);
+
+        setTimeout(function () {
+            console.log("time out again...");
+
+        }, 3000);
+
+        function timedely() {
+            setTimeout(function () {
+                console.log("time out again...");
+
+            }, 2000);
+        }
+        function uppercase() {
+            const element = document.getElementById("fname");
+            element.value = element.value.toUpperCase();
+        }
+    </script>
+    <label for="first">onkeydown</label>
+    <input type="text" id="fname" onkeydown="uppercase()"><br><br>
+    <label for="second">onkeyup</label>
+    <input type="text" id="fname" onkeyup="uppercase()">
+
+    <label for="second">keypress</label>
+    <input type="text" id="fname" onkeypress="uppercase()">
+</body>
+
+</html>

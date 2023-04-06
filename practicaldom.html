@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="h1">hi</h1>
+    <button onclick="welcome()">welcome</button>
+    <button onclick="changecolor()">change color</button>
+    <button onclick="changetxt()">change text</button>
+    <button onclick="changebackground()">change background</button>
+    <button onclick="changefontsize()">change font size</button>
+    
+
+    <script>
+        function changecolor() {
+            document.getElementById("h1").style.color = prompt("Enter color here..");
+            setTimeout(() => {
+                document.getElementById("h1").innerHTML = "If you change text of this line click on change text";
+            }, 6000);
+        }
+        function changetxt() {
+            document.getElementById("h1").innerHTML = prompt("Enter Text to change...");
+            setTimeout(() => {
+                document.getElementById("h1").style.color=
+                document.getElementById("h1").innerHTML = "If you change background of this line click on change background";
+            }, 6000);
+        }
+        function changebackground() {
+            document.getElementById("h1").style.background = prompt("Enter Backgroung color..");
+            setTimeout(() => {
+                document.getElementById("h1").innerHTML = "If you change font size of this line click on change font size";
+            }, 6000);
+        }
+        function changefontsize() {
+            document.getElementById("h1").style.fontSize = prompt("Enter font size....");
+        }
+        
+        setTimeout(() => {
+            document.getElementById("h1").innerHTML = "Rohan";
+        }, 2000);
+        setTimeout(() => {
+            document.getElementById("h1").innerHTML = "Please click on welcome";
+        }, 4000);
+
+        function welcome() {
+            setTimeout(function () {
+                document.getElementById("h1").innerHTML = "Welcome to web page";
+            }, 2000)
+            setTimeout(() => {
+                document.getElementById("h1").innerHTML = "If you change color of this line click on change color";
+            }, 6000);
+
+
+
+        }
+
+    </script>
+</body>
+
+</html>

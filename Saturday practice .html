@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn {
+        cursor: progress;
+        height: 30px;
+        width: 90%;
+        margin-top: 15px;
+        margin-left: 15px;
+        border-radius: 15px;
+        background-color: blue;
+
+    }
+
+    .div1 {
+        height: 200px;
+        width: 300px;
+        background-color: aquamarine;
+        margin-top: 150px;
+        margin-left: 450px;
+        border-radius: 10px;
+
+    }
+
+    #nam1 {
+        margin-top: 50px;
+        margin-left: 13px;
+        height: 30px;
+        width: 200px;
+        border-radius: 10px;
+        border: 1px solid black;
+        text-align: center;
+
+    }
+
+    #pass {
+        margin-top: 10px;
+        height: 30px;
+        width: 200px;
+        border-radius: 10px;
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    .l1 {
+        margin-left: 15px;
+    }
+</style>
+
+<body>
+
+    <div class="div1">
+
+        <form onclick="validate()" action="./Soft-tech.html">
+            <label for="fn" class="l1"> E-mail:</label>
+            <input type="email" placeholder="enter your email" required id="nam1"><br>
+            <label for="ps" class="l1"> Passwod:</label>
+            <input type="Password" placeholder="enter the Passwod" required id="pass"><br>
+            <input type="submit" id="btn">
+        </form>
+    </div>
+    <script>
+        function validate() {
+            var Name = document.getElementById("nam1");
+            var Passwod = document.getElementById("pass");
+            if (Name.value == "" || Passwod.value == "") {
+
+                return false;
+            }
+            else {
+                true;
+            }
+        }
+    </script>
+</body>
+
+</html>

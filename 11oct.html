@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //in array multiple object..................................................
+        let arr = [
+            { name: "Rohan", roll: 900 },
+            { name: "prashant", roll: 1800 },
+            { name: "abhi", roll: 999 },
+            { name: "Rohan", roll: 9001 },
+            { name: "prashant", roll: 18001 },
+            { name: "abhi", roll: 9991 },
+
+            { name: "Rohan", roll: 90 },
+            { name: "prashant", roll: 1800 },
+            { name: "abhi", roll: 999 }
+
+
+        ];
+        let obj = arr.findIndex(array => array.roll > 1000);
+        console.log(obj);//find the index of array............
+        let obj1 = arr.filter(array => array.roll > 1000);
+        console.log(obj1);
+
+
+
+//multiple array....................................................................................
+        let arr1 = [
+            [1, 2, 3, 4, 5, 6],
+            ["rohan", "codekul", "pune"],
+            [21, "Rohan"]
+        ]
+        console.log(arr1[1][0]);
+        console.log(arr1[1][1]);
+        console.log(arr1[0][1]);
+        let arr2 = 
+            [1, 2, 3, 4, 5, 6]
+        console.log(arr2.slice(3));
+        let arr3= ["rohan", "codekul", "pune"];
+        console.log(arr3.slice(1));
+        
+    </script>
+</body>
+
+</html>

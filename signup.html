@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url(https://png.pngtree.com/background/20210715/original/pngtree-light-color-japanese-style-geometric-simple-small-fresh-advertising-background-picture-image_1302659.jpg);
+        }
+
+        #in1 {
+            height: 40px;
+            width: 250px;
+            margin-left: 40px;
+            text-align: center;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        #in2 {
+            height: 40px;
+            width: 250px;
+            margin-left: 23px;
+            text-align: center;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        #in3 {
+            height: 40px;
+            width: 250px;
+            margin-left: 41px;
+            text-align: center;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        #in4 {
+            height: 40px;
+            width: 250px;
+            margin-left: 41px;
+            text-align: center;
+            margin-top: -15px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        #in5 {
+            height: 40px;
+            width: 250px;
+            margin-left: 30px;
+            text-align: center;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        #in6 {
+            height: 40px;
+            width: 250px;
+            margin-left: 13px;
+            text-align: center;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid black;
+
+        }
+
+        #in7 {
+            height: 40px;
+            width: 250px;
+            margin-left: 52px;
+            text-align: center;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        #btn {
+            font-size: 19px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #fff;
+            min-width: 194px;
+            padding: 7px 20px;
+            text-align: center;
+            background: -webkit-linear-gradient(#67ae55, #578843);
+            border: 1px solid;
+            border-color: #3b6e22 #3b6e22 #2c5115;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 400px;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: #578843;
+        }
+
+        .div1 {
+            margin-top: 100px;
+            margin-left: 40px;
+        }
+
+        .div2 {
+            margin-top: -175px;
+            margin-left: 500px;
+            width: 500px;
+        }
+
+        #mal,
+        #femal {
+
+            margin-left: 65px;
+            margin-top: 17px;
+        }
+
+        .div4 {
+            border: 1px solid pink;
+            background-color: pink;
+            height: 80px;
+            width: 100%;
+            position: fixed;
+            margin-top: -100px;
+
+        }
+
+        a {
+            padding: 5px 12px;
+            margin: 0px 2px;
+            color: #000;
+            background: -webkit-linear-gradient(#67ae55, #578843);
+            border: 1px solid;
+            border-color: #3b6e22 #7ab05f #2c5115;
+
+            border-radius: 30px;
+
+
+        }
+
+        .nav1 {
+
+            margin-left: 650px;
+            margin-top: 25px;
+            color: #000;
+
+
+        }
+
+        .div5 {
+
+            width: 150px;
+            margin-top: -16px;
+            margin-left: 70px;
+            font-size: x-large;
+
+        }
+
+        .a1:hover {
+            color: white;
+            border-radius: 50px;
+            background-color: #67ae55;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div4">
+
+        <nav class="nav1">
+            <a href="./Promax.html" class="a1">Home</a>
+            <a href="./company.html" class="a1">Company</a>
+            <a href="Service" class="a1">Service</a>
+            <a href="./gallary.html" class="a1">Gallary</a>
+            <a href="Blog" class="a1">Blog</a>
+            <a href="Contact" class="a1">Contact</a>
+
+        </nav>
+        <div class="div5">
+            <span style="color:#fff">PRO-</span>
+            <span style="color:#66CC66">MAX</span>
+
+        </div>
+    </div>
+    <form onclick="sign()" action="">
+
+        <div class="div1">
+            <label for="fn">First Name:</label>
+            <input type="text" placeholder="Enter your first name" id="in1" required><br>
+            <label for="fn">Middle Name:</label>
+            <input type="text" placeholder="Enter your Middle name" id="in2" required><br>
+            <label for="fn">Last Name:</label>
+            <input type="text" placeholder="Enter your Last name" required id="in3"><br>
+            <label for="fn">E-mail Address:</label>
+            <input type="email" placeholder="Enter your Email address" required id="in6"><br>
+        </div>
+        <div class="div2">
+
+            <label for="fn">contact No:</label>
+            <input type="number" placeholder="Enter your contact No" required id="in4"><br>
+            <label for="fn">Date of birth:</label>
+            <input type="datetime-local" id="in5"><br>
+
+            <label for="fn">password:</label>
+            <input type="password" placeholder="Enter your password" required id="in7"><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="mal" name="fav_language" value="Male" required>
+            <label for="html">Male</label>
+            <input type="radio" id="femal" name="fav_language" value="Female" required>
+            <label for="css">Female</label><br>
+
+        </div>
+        <input type="submit" id="btn">
+    </form>
+    <script>
+
+
+
+
+
+    </script>
+</body>
+
+</html>

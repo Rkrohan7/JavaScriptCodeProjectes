@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="txt">hi</h1>
+    <p>
+        <button onclick="changecolor()">color</button>
+        <button onclick="changetxt()">change Text</button>
+    </p>
+    <script>
+        function changecolor() {
+            var c = prompt("Enter color:");
+            document.getElementById("txt").style.color = c;
+        }
+        function changetxt() {
+            var d = prompt("Enter Text:");
+            document.getElementById("txt").innerHTML = d;
+        }
+        function changecolor1(newcolor1) {
+            document.getElementById("txt").style.color = newcolor1;
+        }
+
+
+        function changetext1(newcolor1) {
+            document.getElementById("txt").innerHTML = "First";
+        }
+        function changetext2(newcolor1) {
+            document.getElementById("txt").innerHTML = "second";
+        }
+        function changetext3(newcolor1) {
+            document.getElementById("txt").innerHTML = "Third";
+        }
+
+
+        function changefontsize(newcolor1) {
+            document.getElementById("txt").style.fontSize = '10px';
+        }
+        function changefontsize1(newcolor1) {
+            document.getElementById("txt").style.fontSize = '20px';
+        }
+        function changefontsize2(newcolor1) {
+            document.getElementById("txt").style.fontSize = '50px';
+        }
+
+        function changebackground1(newcolor1) {
+            document.getElementById("txt").style.background = newcolor1;
+        }
+    </script>
+
+    <button onclick="changecolor1('red')">red</button>
+    <button onclick="changecolor1('blue')">blue</button>
+    <button onclick="changecolor1('pink')">pink</button><br><br>
+
+
+    <button onclick="changetext1('red')">1</button>
+    <button onclick="changetext2('blue')">2</button>
+    <button onclick="changetext3('pink')">3</button><br><br>
+
+    <button onclick="changefontsize('red')">small</button>
+    <button onclick="changefontsize1('red')">Large</button>
+    <button onclick="changefontsize2('red')">Extra Large</button><br><br>
+
+
+    <button onclick="changebackground1('pink')">pink</button>
+    <button onclick="changebackground1('yellow')">yellow</button>
+    <button onclick="changebackground1('blue')">blue</button>
+
+</body>
+
+</html>
